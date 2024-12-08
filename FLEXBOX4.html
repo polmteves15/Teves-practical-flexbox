@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    
+    body{
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
+
+    .border{
+        border: 1px solid black;
+    }
+
+    .d-flex{
+        display: flex;
+    }
+
+    .g-5{
+        gap: 5px;
+    }
+
+    .p-4{
+        padding: 4px;
+    }
+
+    .p-3{
+        padding: 3px;
+    }
+
+    .p-2{
+        padding: 2px
+    }
+
+    .f-grow-1{
+        flex-grow: 1;
+    }
+
+    .f-grow-2{
+        flex-grow: 2;
+    }
+
+    .margin-2{
+        margin: 2px;
+    }
+
+    .margin-3{
+        margin: 3px;
+    }
+
+    .margin-4{
+        margin: 4px;
+    }
+
+    .f-grow-3{
+        flex-grow: 3;
+    }
+
+    .f-grow-4{
+        flex-grow: 4;
+    }
+
+    
+    .align-content-start{
+        align-content: flex-start ;
+    }
+
+    .align-content-end{
+        align-content: flex-end;
+    }
+
+    .align-content-center{
+        align-content: center;
+    }
+
+    .align-items-start{
+        align-items: flex-start;
+    }
+    
+    .align-items-end{
+        align-items: flex-end;
+    }
+
+    .align-items-center{
+        align-items: center;
+    }
+    .justify-content-start{
+        justify-content: flex-start;
+    }
+
+    .justify-content-end{
+        justify-content: flex-end;
+    }
+
+    .justify-content-center{
+        justify-content: center;
+    }
+
+    .justify-content-space-between{
+        justify-content: space-between;
+    }
+
+    .justify-content-space-around{
+        justify-content: space-around;
+    }
+
+    .justify-items-start{
+        justify-items: flex-start;
+    }
+
+    .justify-items-end{
+        justify-items: flex-end;
+    }
+    
+    .justify-items-center{
+        justify-items: center;
+    }
+    .f-direction-column{
+        flex-direction: column;
+    }
+
+    .f-direction-row{
+        flex-direction: row;
+    }
+    
+    .nvbox1{
+      padding: 12px;
+      width: 0.3vw;
+      background-color: red;
+      border: none;
+      height: 1vh;
+    
+    }
+
+    .nvbox{
+        margin-right: auto;
+    }
+    .nvblue{
+        height: 3.4vh;
+        width: 2.6vw;
+        background-color: blue;
+        border: none;
+    }
+
+    .mainbbox2{
+        height: 30vh;
+        width: 25vw;
+    }
+    .asd10s{
+        height: 4vh;
+        width: 13vw;
+    }
+    .ftred{
+        padding: 12px;
+      width: 0.3vw;
+      background-color: red;
+      border: none;
+      height: 1vh;
+    }
+    .ftrred{
+        height: 2vh;
+        width: 1.1vw;
+        border: none;
+        background-color: red;
+    }
+
+</style>
+<body class="g-5 d-flex f-direction-column ">
+    <div class="nav border p-3 d-flex">
+        <div class="nvbox d-flex g-5 align-items-center">
+            <div class="nvbox1 border"></div>
+            <div class="nvflex align-content-center">FLEXBOX</div>
+        </div>
+        <div class="navbox2 d-flex g-5 align-items-center">
+            <div class="nvblue border"></div>
+            <div class="nvblue border"></div>
+        </div>
+    </div>
+
+   <div class="main d-flex f-grow-1 g-5 ">
+        <div class="body border f-grow-1 g-5 p-4">
+            <div class="bodymain d-flex g-5 p-4 justify-content-center justify-content-space-around">
+                 <div class="mainbox2 border p-4 justify-items-center">Main Box 1
+                    <div class="mainbbox2 border"></div>
+                 </div>
+                 <div class="mainbox2 border p-4 justify-items-center">Main Box 1
+                    <div class="mainbbox2 border"></div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="aside border d-flex p-3">
+            <div class="asd10 d-flex f-direction-column   g-5">
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+                <div class="asd10s border"></div>
+            </div>
+        </div>
+   </div>
+
+
+    <div class="footer border p-3 d-flex  g-5 f-direction-column">
+        <div class="ftrbox d-flex g-5">
+          <div class="ftred border"></div>
+          <div class="ftrflex align-content-center">FLEXBOX</div>
+        </div>
+
+        <div class="ht"><hr></div>
+
+        <div class="ftrdwn ">
+            <div class="box5ftr d-flex g-5 p-4 justify-content-center">
+                <div class="ftrred border"></div>
+                <div class="ftrred border"></div>
+                <div class="ftrred border"></div>
+                <div class="ftrred border"></div>
+                <div class="ftrred border"></div>
+            </div>
+            <div class="ftrcopy justify-content-center d-flex">©Copyright All rights reserved.</div>
+        </div>
+    </div>
+   
+</body>
+</html>
